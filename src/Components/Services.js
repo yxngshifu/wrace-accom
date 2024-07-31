@@ -11,7 +11,7 @@ import { TbLocationCheck } from 'react-icons/tb';
 function Services() {
   return (
     <div className="min-h-screen py-10 ">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 px-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 px-20">
         <div className="relative flex flex-col items-start p-4  ">
           <CiWifiOn size={40} className="text-gray-700 mb-2" />
           <h1 className="text-gray-700 sm:text-md lg:text-lg font-semibold">24 HR WIFI SERVICE</h1>

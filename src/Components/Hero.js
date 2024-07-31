@@ -34,14 +34,13 @@ const Data = [
 function Hero() {
   const bgStyle = {
     backgroundImage: `url(${heropic})`,
-      backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '60vh',
-        width: '60vh',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  minHeight: '100vh',
         display: 'flex',
-       justifyContent:'center',
-        alignitems:'center',
+       justifyContent:'left',
+        alignitems:'left',
   };
  
 
@@ -146,9 +145,9 @@ function Hero() {
             ))}
           </Slider>
         </div>
-        <div className='w-full relative py-20 ' style={bgStyle}>
+        <div className='w-full relative py-20 px-20' style={bgStyle}>
           
-          <div className="flex justify-center  ">
+          <div className="flex justify-center items-center h-screen py-40 ">
       <form
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-lg shadow-md w-full max-w-md"

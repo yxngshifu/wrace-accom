@@ -18,7 +18,7 @@ function Navbar() {
     };
   
   return (
-     <div className="  font-poppins flex justify-between items-center bg-opacity-90 h-24 max-w-[1240px] mx-auto px-4 text-[#adb5bd] ">
+     <div className="  font-poppins flex justify-between items-center bg-opacity-90 h-24 max-w-[1240px] mx-auto px-20 text-[#adb5bd] ">
              <Link to="/">
                 <img className="w-[100px] mx-4 my-4 flex items-center" src={logo1} alt="/" />
                </Link>
@@ -35,17 +35,18 @@ function Navbar() {
                 </li>
               
             </ul>
-            <div onClick={handleNav} className="block sm:hidden">
-                {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-            </div>
-       
-            <div
-                className={
-                    nav
-                        ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#f5ebe0] bg-opacity-90 ease-in-out duration-500'
-                        : 'fixed left-[-100%] '
-                }
-            >
+           <div className="flex items-center justify-end md:space-x-4 px-4">
+    <div onClick={handleNav} className="block md:hidden">
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+    </div>
+
+    <div
+        className={
+            nav
+                ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#f5ebe0] bg-opacity-90 ease-in-out duration-500'
+                : 'fixed left-[-100%]'
+        }
+    >
                  <Link to="/">
                 <h1 className="w-full font-bold text-3xl m-4 text-[#0077b6]">
                     ASTERIA
@@ -65,6 +66,7 @@ function Navbar() {
                     
                 </ul>
             </div>
+        </div>
         </div>
   )
 }
