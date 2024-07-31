@@ -18,93 +18,54 @@ function Navbar() {
     };
   
   return (
-    <div>
-         <div className="flex justify-between items-center mx-auto  lg:px-16 text-black">
-        <Link to='/' smooth={true} duration={500}>
-         <img className="w-[200px] lg:mx-10 sm:px-4 md:mx-6 my-8 flex items-center cursor-pointer" src={logo1} alt="/" />
-         </Link>
-        <ul className="space-x-12 text-black font-bold p-28 flex items-center ml-[-10px]">
-     
-      <li className="hidden md:block cursor-pointer">
-        <Link
-          to="/rooms"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#6c584c] hover:underline focus:underline"
-        >
-          ROOMS
-        </Link>
-      </li>
-      <li className="hidden md:block cursor-pointer">
-        <Link
-          to="/knowus"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#6c584c] hover:underline focus:underline"
-        >
-          KNOW US
-        </Link>
-      </li>
-      <li className="hidden md:block cursor-pointer">
-        <Link
-          to="/gallery"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#6c584c] hover:underline focus:underline"
-        >
-          GALLERY
-        </Link>
-      </li>
-    </ul>
-      <div onClick={handleNav} className="block md:hidden">
+     <div className="  font-poppins flex justify-between items-center bg-opacity-90 h-24 max-w-[1240px] mx-auto px-4 text-[#adb5bd] ">
+             <Link to="/">
+                <img className="w-[100px] mx-4 my-4 flex items-center" src={logo1} alt="/" />
+               </Link>
+            <ul className="hidden md:flex ">
+                <li className="p-4 hover:text-[#000000]">
+                      <Link to="/">ROOMS</Link>
+                </li>
+              
+                <li className="p-4 hover:text-[#000000]">
+                    <Link to="/knowus">KNOW US</Link>
+                </li>
+                <li className="p-4 hover:text-[#000000]">
+                   <Link to="/gallery">GALLERY</Link>
+                </li>
+              
+            </ul>
+            <div onClick={handleNav} className="block sm:hidden">
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
-        </div>
-         <div
+       
+            <div
                 className={
                     nav
-                        ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#f09029] bg-opacity-100 ease-in-out duration-500'
+                        ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#f5ebe0] bg-opacity-90 ease-in-out duration-500'
                         : 'fixed left-[-100%] '
                 }
             >
-               <Link to='/' smooth={true} duration={500}>
-         <img className="w-32 h-30 lg:mx-10 sm:px-4 md:mx-6 my-4 flex items-center cursor-pointer" src={logo1} alt="/" />
-         </Link>
-        <ul className="space-x-2 text-black font-bold p-4 flex items-center ml-[-10px]">
-     
-      <li className="hidden md:block cursor-pointer">
-        <Link
-          to="/rooms"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#6c584c] hover:underline focus:underline"
-        >
-          ROOMS
-        </Link>
-      </li>
-      <li className="hidden md:block cursor-pointer">
-        <Link
-          to="/knowus"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#6c584c] hover:underline focus:underline"
-        >
-          KNOW US
-        </Link>
-      </li>
-      <li className="hidden md:block cursor-pointer">
-        <Link
-          to="/gallery"
-          smooth={true}
-          duration={500}
-          className="hover:text-[#6c584c] hover:underline focus:underline"
-        >
-          GALLERY
-        </Link>
-      </li>
-    </ul>
+                 <Link to="/">
+                <h1 className="w-full font-bold text-3xl m-4 text-[#0077b6]">
+                    ASTERIA
+                </h1>
+                </Link>
+                <ul className="uppercase p-4">
+                    <li className="p-4 border-b border-gray-600 hover:text-[#000000]">
+                        <Link to="/work">ROOMS</Link>
+                    </li>
+                    <li className="p-4 border-b border-gray-600 hover:text-[#000000]">
+                         <Link to="/knowus">KNOW US</Link>
+                    </li>
+                    <li className="p-4 border-b border-gray-600 hover:text-[#000000]">
+                       <Link to="/gallery">GALLERY</Link>
+                    </li>
+                  
+                    
+                </ul>
             </div>
-    </div>
+        </div>
   )
 }
 
