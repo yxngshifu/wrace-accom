@@ -134,7 +134,7 @@ function Hero() {
     <div>
       <Navbar />
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 text-black'>
-        <div className="sm:px-6 md:px-10  md:py-40 lg:px-20 text-justify">
+        <div className="sm:px-20 md:px-20  md:py-40 lg:px-20 text-justify">
           <Slider {...settings}>
             {Data.map((item, index) => (
               <div key={index} className='sm:px-20 md:px-20 py-10 md:py-20 text-justify'>
