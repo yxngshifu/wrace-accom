@@ -137,7 +137,7 @@ function Hero() {
         <div className="sm:px-20 md:px-20  md:py-40 lg:px-20 text-justify">
           <Slider {...settings}>
             {Data.map((item, index) => (
-              <div key={index} className='sm:px-20 md:px-20 py-10 md:py-20 text-justify'>
+              <div key={index} className='sm:px-40 md:px-20 py-10 md:py-20 text-justify'>
                 <p className='text-xl md:text-4xl lg:text-2xl text-black pb-4'>{item.title}</p>
                 <h1 className='pb-2 sm:text-4xl md:text-4xl lg:text-6xl text-[#6c584c] font-bold'>{item.para}</h1>
                 <p className='mb-4 text-md md:text-lg lg:text-xl xl:text-2xl text-black font-Raleway font-medium'>{item.label}</p>
