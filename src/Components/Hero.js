@@ -13,7 +13,7 @@ const Data = [
   {
     title: 'What is your perfect room like?',
     para: 'COZY ROOM',
-    label: 'Book your perfect place from our vast selection of listings',
+    label: 'Book a perfect place from our vast selection of listings',
     image: '../Assets/herowrace.jpg',
     
   },
